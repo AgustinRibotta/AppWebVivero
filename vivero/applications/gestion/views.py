@@ -7,7 +7,8 @@ from .models import PlantasModels
 
 class PlantasListView(ListView):
     model = PlantasModels
-    template_name = "planta.html"
+    template_name = "inicio.html"
+    context_object_name = 'list'
     
 
 

@@ -1,0 +1,46 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block blockname %}
+    <!-- Section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                
+                <!--Este Blocke es el que se tiene que repetir-->
+                
+                {% for p in list %}
+                    
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">{{p.name}}</h5>
+                                <!-- Product price-->
+                            </div>
+                        </div>
+                        <!-- Product image-->
+                        <div>
+                            <img class="card-img-top" src="media/bonsai.jpeg" alt="..." />
+                        </div>
+                        <div class="card-body p-4">
+                            <h6 class="fw-bolder text-center">Precio: </h6>
+                            <h6 class="fw-bolder text-center">{{p.price}}</h6>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-primary" href="#">Mas Info</a>
+                                <a class="btn btn-primary" href="#">Whatsapp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% endfor %}
+                <!--############################################-->
+
+            </div>
+        </div>
+    </section>
+{% endblock blockname %}
