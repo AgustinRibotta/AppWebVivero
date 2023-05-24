@@ -1,8 +1,12 @@
 {% extends 'home.html' %}
 {% load static %}
-{% block blockname %}
+{% block blockname %} 
     <!-- Section-->
     <section class="py-5">
+        <form class=" text-center user-form" id="form">{% csrf_token %}
+            <input class="btn fw-bolder text-white bg-secondary my-5 " type="text" id= "kword" name="kword" placeholder="Indique el nombre de la planta">
+            <button type="submit" class="btn btn-success" >Buscar</button>
+        </form>
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 
@@ -15,7 +19,7 @@
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h5 class="fw-bolder">{{p.name}}</h5>
+                                <a class="fw-bolder" href='{% url "planta"  p.id  %}'><h3 class="fw-bolder">{{p.name}}</h3></a>
                                 <!-- Product price-->
                             </div>
                         </div>
@@ -30,8 +34,7 @@
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <div class="text-center">
-                                <a class="btn btn-primary" href="#">Mas Info</a>
-                                <a class="btn btn-primary" href="#">Whatsapp</a>
+                                <a class="btn btn-success" href='{% url "planta"  p.id  %}'>Mas Info</a>
                             </div>
                         </div>
                     </div>

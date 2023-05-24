@@ -5,13 +5,18 @@
     <div class="container px-4 px-lg-5">
         <!-- Heading Row-->
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
-            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="media/cultivo-zamioculca.jpg" alt="..." /></div>
+            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="media\bonsai.jpeg" alt="..." /></div>
             <div class="col-lg-5">
-                <h1 class="font-weight-light">Business Name or Tagline</h1>
-                <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-                <a class="btn btn-primary" href="#!">Whatsapp</a>
-                <a class="btn btn-primary" href="#!">Instagram</a>
+                
+                <a class="btn btn-success" href= '{% url "plantas" %}'>Retornar al inicio</a>
+                <h1 class="fw-bolder">{{plantasmodels.name}}</h1>
+                <div>{{plantasmodels.desciption|safe}}</div>
+                <h6 class="fw-bolder text-center">$ {{plantasmodels.price}}</h6>
+                <a class="btn btn-success" href="#!">Whatsapp</a>
+                <a class="btn btn-success" href="#!">Instagram</a>
+                <a class="btn btn-success" href="#!">Faceboock</a>
             </div>
+
         </div>
         <!-- Call to Action-->
         <div class="card text-white bg-secondary my-5 py-4 text-center">
@@ -22,21 +27,7 @@
             <div class="col-md-4 mb-5">
                 <div class="card h-100">
                     <div class="card-body">
-                        <img class="img-fluid rounded mb-4 mb-lg-0" src="media/cultivo-zamioculca.jpg" alt="..." />
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-5">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <img class="img-fluid rounded mb-4 mb-lg-0" src="media/cultivo-zamioculca.jpg" alt="..." />
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-5">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <img class="img-fluid rounded mb-4 mb-lg-0" src="media/cultivo-zamioculca.jpg" alt="..." />
+                        <img class="img-fluid rounded mb-4 mb-lg-0" src="media\bonsai.jpeg" alt="..." />
                     </div>
                 </div>
             </div>

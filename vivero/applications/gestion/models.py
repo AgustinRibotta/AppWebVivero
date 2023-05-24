@@ -7,11 +7,11 @@ class PlantasModels(models.Model):
     """Model definition for Plantas."""
 
     # TODO: Define fields here
-    name = models.CharField('Nombre', max_length=30)
+    name = models.CharField('Nombre', max_length=30, unique=True)
     # front = models.ImageField(, upload_to=None, height_field=None, width_field=None, max_length=None)
     # detail = models.ImageField(, upload_to=None, height_field=None, width_field=None, max_length=None)
     price = models.DecimalField('Precio', max_digits=5, decimal_places=2, null=0)  
-    desciption = RichTextField(blank=True)
+    desciption = RichTextField(blank=True, null=True)
        
      
     class Meta:
