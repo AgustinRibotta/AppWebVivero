@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
-from .models import PlantasModels
+from .models import PlantaModel, PlantasModels
 
 # Create your views here.
 
@@ -29,6 +29,19 @@ class PlantasListView(ListView):
 class PlantaDetailView(DetailView):
     model = PlantasModels
     template_name = "info.html"
+    
+    
+    def get_context_data(self, **kwargs):
+        context = super(PlantaDetailView, self).get_context_data(**kwargs)
+        context['plantas'] = PlantaModel.objects.filter(
+            
+            plantas = context['object']
+            )
+        return context
+        
+
+    
+    
 
         
 
