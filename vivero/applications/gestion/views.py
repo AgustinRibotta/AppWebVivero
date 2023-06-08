@@ -10,20 +10,12 @@ class PlantasListView(ListView):
     context_object_name = 'list'
     
     def get_queryset(self):
-        kword = self.request.GET.get('kword')
-        
-        if not kword:
-            planta = PlantasModels.objects.all()
-            print(planta )
-            return planta
-        
-        else:
-
-            planta = PlantasModels.objects.filter(
-            name = kword.capitalize()
-            )
+        kword = self.request.GET.get('kword','')
+        planta = PlantasModels.objects.filter(
+        name__icontains= kword.capitalize()
+        )
             
-            return planta
+        return planta
             
 
 class PlantaDetailView(DetailView):
