@@ -1,9 +1,9 @@
 import os
 from .base import *
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['ViveroDonPedro.pythonanywhere.com ']
 
 # Data BAse
 DATABASES = {
