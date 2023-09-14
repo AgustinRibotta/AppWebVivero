@@ -1,0 +1,50 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block blockname %}
+<!-- Page Content-->
+<div class="container px-4 px-lg-5">
+    <!-- Heading Row-->
+    <div class="row gx-6 gx-lg-6 align-items-center my-6">
+
+        <div class="row align-items-center my-5" >
+            <a class="btn btn-success align-items-center" href= '{% url "plantas" %}'>Retornar al inicio</a>
+        </div>
+
+        <div class="col-lg-3"><img class="square-images"  src="{{plantasmodels.front.url}}" alt="..." /></div>
+
+        <div class="col-lg-8">
+            
+            <h1 class="fw-bolder">{{plantasmodels.name}}</h1>
+            <div>{{plantasmodels.desciption|safe}}</div>
+            <a class="btn btn-success" href="#!">Whatsapp</a>
+            <a class="btn btn-success" href="#!">Instagram</a>
+            <a class="btn btn-success" href="#!">Faceboock</a>
+        </div>
+
+    </div>
+    <!-- Call to Action-->
+    <div class=" bg-success  text-center">
+        <h5 class=" text-white m-4">Nuestra disponibilidad</h5>
+    </div>
+    <!-- Content Row-->
+    <div class="card mb-3">
+        <div class="card-body p-2 text-center"> <!-- Centrar el contenido -->
+            <div class="row">
+                {% for p in plantas %}
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3"> <!-- Controlar el tamaño en diferentes pantallas -->
+                        <div class="card">
+                            <img class="square-image" src="{{p.list.url}}" alt="..." loading="lazy" /> <!-- Ajustar el tamaño y centrar -->
+                            <div class="card-body">
+                                <h5 class="card-title fw-bolder">{{p.name}}</h5>
+                                <h6 class="card-text fw-bolder">Precio: ${{p.price}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+{% endblock blockname %}

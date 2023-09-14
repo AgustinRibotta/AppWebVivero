@@ -4622,6 +4622,47 @@ textarea.form-control-lg {
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
 
+/* Estilos CSS personalizados */
+.square-image {
+    max-width: 100%; /* La imagen no superará el ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente */
+    max-height: 250px; /* Altura máxima de 150px (ajusta este valor según tus preferencias) */
+}
+
+
+/* Estilos CSS personalizados */
+.square-images {
+  max-width: 100%; /* La imagen no superará el ancho del contenedor */
+  height: auto; /* La altura se ajustará automáticamente */
+  max-height: 600px; /* Altura máxima de 150px (ajusta este valor según tus preferencias) */
+}
+
+.card-img-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: super; /* Centrar verticalmente */
+    height: 260px; /* Altura fija de 150px (ajusta este valor según tus preferencias) */
+
+}
+
+.card-img-containers-portada{
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: super; /* Centrar verticalmente */
+  height: 800px; /* Altura fija de 150px (ajusta este valor según tus preferencias) */
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina rellenos predeterminados */
+}
+
+.ssquare-imagen-portada {
+  width: 200%; /* Establece el ancho de la imagen al 80% del contenedor */
+  height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+
+}
+
+
+
+
 .card-group > .card {
   margin-bottom: 0.75rem;
 }
@@ -4671,7 +4712,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: 1rem 1.25rem;
   font-size: 1rem;
-  color: #212529;
+  color: #ffffff;
   text-align: left;
   background-color: #fff;
   border: 0;
