@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'viveroAle.settings.local')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'viveroAle.settings.prod')
 
 application = get_asgi_application()

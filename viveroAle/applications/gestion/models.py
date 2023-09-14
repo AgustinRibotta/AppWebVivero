@@ -19,13 +19,14 @@ class PlantasModels(models.Model):
     desciption = RichTextField(
         blank=True
     )
+    stock = models.BooleanField(default=True)
        
      
     class Meta:
         """Meta definition for Plantas."""
 
-        verbose_name = 'Variedad de Planta'
-        verbose_name_plural = 'Variedad de Plantas'
+        verbose_name = 'Cargar categoria de Planta'
+        verbose_name_plural = 'Categorias de Plantas'
 
     def __str__(self):
 
@@ -55,12 +56,13 @@ class PlantaModel(models.Model):
         PlantasModels, 
         on_delete=models.CASCADE
     )
+    stock = models.BooleanField(default=True)
 
     class Meta:
         """Meta definition for Planta."""
 
-        verbose_name = 'Planta'
-        verbose_name_plural = 'Plantas'
+        verbose_name = 'Cargar una nueva Planta'
+        verbose_name_plural = 'Cargar nuevas  Plantas'
 
     def __str__(self):
         """Unicode representation of Planta."""

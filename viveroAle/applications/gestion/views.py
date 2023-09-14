@@ -12,9 +12,10 @@ class PlantasListView(ListView):
     def get_queryset(self):
         kword = self.request.GET.get('kword','')
         planta = PlantasModels.objects.filter(
-        name__icontains= kword.capitalize()
-        )
-            
+        name__icontains= kword.capitalize(),
+        stock=True
+        ) 
+          
         return planta
             
 
@@ -26,7 +27,7 @@ class PlantaDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super(PlantaDetailView, self).get_context_data(**kwargs)
         context['plantas'] = PlantaModel.objects.filter(
-            
+            stock=True,
             plantas = context['object']
             )
         return context
