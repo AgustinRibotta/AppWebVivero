@@ -3,7 +3,7 @@ from .base import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['ViveroDonPedro.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 # Data BAse
 DATABASES = {

@@ -9,14 +9,14 @@ Esta página web es un proyecto dedicado a mostrar la belleza de las plantas y b
 
 En el mismo podremos encontrar tanto la presentacion del vivero como tambien el catalogo tipos y calses de plantas que se puede encontrar en el vivero
 
-![Portada](/AppWebVivero/media/protadaVivero.png)
-![Portada](/AppWebVivero\media\Inferior.png)
+![Portada](https://github.com/AgustinRibotta/AppWebVivero/blob/main/media/protadaVivero.png)
+![Portada](https://github.com/AgustinRibotta/AppWebVivero/blob/main/media/Inferior.png)
 
 ### Detail
 
 En esta vista podremos encontrar la categoria de plantas con su descripcion y caracteristicas de es categoria de plantas y ademas la disponibilidad de plantas que se pueden encontrar.
 
-![Detail](/AppWebVivero\media\Detail.png)
+![Detail](https://github.com/AgustinRibotta/AppWebVivero/blob/main/media/Detail.png)
 
 
 ## Tecnologías Utilizadas
