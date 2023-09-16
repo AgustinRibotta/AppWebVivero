@@ -4649,13 +4649,13 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center; /* Centrar horizontalmente */
   align-items: super; /* Centrar verticalmente */
-  height: 800px; /* Altura fija de 150px (ajusta este valor según tus preferencias) */
+  height: 0; /* Altura fija de 150px (ajusta este valor según tus preferencias) */
   margin: 0; /* Elimina márgenes predeterminados */
   padding: 0; /* Elimina rellenos predeterminados */
 }
 
 .ssquare-imagen-portada {
-  width: 200%; /* Establece el ancho de la imagen al 80% del contenedor */
+  width: 50%; /* Establece el ancho de la imagen al 80% del contenedor */
   height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
 
 }
