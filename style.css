@@ -1,88 +1,105 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
 }
 
-header {
-  background-color: #9ea690;
-  height: 2rem;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* Nav Bar */
+.navbar-nav {
+  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
 }
 
-.logo-text {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  max-width: 6rem;
-  color: #394a20;
+.navbar {
+  --bs-navbar-hover-color: white;
 }
 
-nav {
-  flex: 1;
+.color-navbar {
+  background-color: #223a1b90;
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
+/* Generic section */
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
-.nav-list li {
-  list-style: none;
+.card {
+  background-color: rgba(143, 132, 126);
+  width: 100%;
+  height: 90%;
 }
 
-.nav-list li a {
-  text-decoration: none;
-  color: #394a20;
+.card-img-top {
+  height: 60%;
 }
 
-.open-menu,
-.close-menu {
-  display: none;
+.btn {
+  border-radius: 33%;
+  background-color: rgb(214, 236, 208, 0.6);
+  box-shadow: 3px +3px 9px 0px rgba(48, 54, 47, 0.4);
 }
 
-@media screen and (max-width: 550px) {
-  .open-menu,
-  .close-menu {
-    display: block;
-    border: none;
-    background-color: #9ea690;
-    font-size: 1.2rem;
+.display-5 {
+  font-size: 14pt;
+  color: #000;
+}
+/* First section */
+
+.firstSection {
+  height: 125vh;
+  width: 100%;
+  background-image: url(https://100daysregister.my.canva.site/vivero/images/5ee7ca51c7733e69b0c7b3dbfe02b71a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-title {
+  font-size: 12pt;
+}
+/* Secind section */
+
+.secondSection {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://100daysregister.my.canva.site/vivero/images/e7e71ef06a9a5f3baa5fa735ed72934d.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Third section */
+
+.thirdSection {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://100daysregister.my.canva.site/vivero/images/838da01bf919a9745ad0356716257244.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Media */
+
+@media (max-width: 1024px) {
+  .firstSection,
+  .secondSection,
+  .thirdSection {
+    height: 105vh;
   }
+}
 
-  .nav {
-    display: none;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 1rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 2rem;
-    opacity: 0;
-    visibility: hidden;
-    background-color: #9ea690;
+@media (max-width: 768px) {
+  .firstSection,
+  .secondSection,
+  .thirdSection {
+    height: 60vh;
   }
+}
 
-  .visible {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: end;
-  }
-
-  .nav-list li a {
-    color: #394a20;
+@media (max-width: 480px) {
+  .firstSection,
+  .secondSection,
+  .thirdSection {
+    height: 200vh;
   }
 }
