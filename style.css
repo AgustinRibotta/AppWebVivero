@@ -16,7 +16,17 @@ body {
   background-color: #223a1b90;
 }
 
-/* Generic section */
+/* First Section */
+
+.firstSection {
+  width: 100%;
+  background-image: url(https://100daysregister.my.canva.site/vivero/images/5ee7ca51c7733e69b0c7b3dbfe02b71a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Catalogue  */
 
 .card:hover {
   transform: scale(1.05);
@@ -25,12 +35,12 @@ body {
 
 .card {
   background-color: rgba(143, 132, 126);
-  width: 100%;
-  height: 90%;
+  width: 90%;
+  height: 70%;
 }
 
 .card-img-top {
-  height: 60%;
+  height: 50%;
 }
 
 .btn {
@@ -43,63 +53,57 @@ body {
   font-size: 14pt;
   color: #000;
 }
-/* First section */
 
-.firstSection {
-  height: 125vh;
-  width: 100%;
-  background-image: url(https://100daysregister.my.canva.site/vivero/images/5ee7ca51c7733e69b0c7b3dbfe02b71a.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 .card-title {
   font-size: 12pt;
-}
-/* Secind section */
-
-.secondSection {
-  height: 100vh;
-  width: 100%;
-  background-image: url(https://100daysregister.my.canva.site/vivero/images/e7e71ef06a9a5f3baa5fa735ed72934d.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/* Third section */
-
-.thirdSection {
-  height: 100vh;
-  width: 100%;
-  background-image: url(https://100daysregister.my.canva.site/vivero/images/838da01bf919a9745ad0356716257244.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 /* Media */
 
+@media (max-width: 1400px) {
+  .card {
+    width: 90%;
+    height: 70%;
+  }
+
+  .card-img-top {
+    height: 50%;
+  }
+}
+
 @media (max-width: 1024px) {
-  .firstSection,
-  .secondSection,
-  .thirdSection {
-    height: 105vh;
+  .card {
+    width: 100%;
+    height: 90%;
+  }
+
+  .card-img-top {
+    height: 50%;
   }
 }
 
 @media (max-width: 768px) {
-  .firstSection,
-  .secondSection,
-  .thirdSection {
-    height: 60vh;
+  .card {
+    height: 95%;
+    height: 80%;
+  }
+
+  .card-img-top {
+    height: 50%;
   }
 }
 
 @media (max-width: 480px) {
-  .firstSection,
-  .secondSection,
-  .thirdSection {
-    height: 200vh;
+  .card {
+    height: 90%;
+    width: 100%;
+  }
+
+  .card-img-top {
+    height: 40%;
+  }
+
+  .card-title {
+    font-size: 9pt;
   }
 }
