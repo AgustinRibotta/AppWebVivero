@@ -1,6 +1,11 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  background-image: url(https://100daysregister.my.canva.site/vivero/images/5ee7ca51c7733e69b0c7b3dbfe02b71a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Nav Bar */
@@ -13,18 +18,11 @@ body {
 }
 
 .color-navbar {
-  background-color: #223a1b90;
+  background-color: a(143, 132, 126);
+  border-bottom: solid black 00.1rem;
 }
 
 /* First Section */
-
-.firstSection {
-  width: 100%;
-  background-image: url(https://100daysregister.my.canva.site/vivero/images/5ee7ca51c7733e69b0c7b3dbfe02b71a.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 /* Catalogue  */
 
@@ -35,7 +33,7 @@ body {
 
 .card {
   background-color: rgba(143, 132, 126);
-  width: 90%;
+  width: 100%;
   height: 70%;
 }
 
@@ -58,6 +56,34 @@ body {
   font-size: 12pt;
 }
 
+/* Second Section */
+
+.accordion-button {
+  font-size: 1.5rem;
+}
+
+.accordion-button {
+  background-color: rgba(143, 132, 126, 0.509);
+}
+
+.accordion-item {
+  color: var(--bs-accordion-color);
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 1rem solid rgb(0, 0, 0, 0);
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none;
+}
+
+/* Footer */
+footer {
+  height: 80px;
+}
+
 /* Media */
 
 @media (max-width: 1400px) {
@@ -78,14 +104,18 @@ body {
   }
 
   .card-img-top {
-    height: 50%;
+    height: 45%;
+  }
+
+  .card-title {
+    font-size: 9pt;
   }
 }
 
 @media (max-width: 768px) {
   .card {
-    height: 95%;
-    height: 80%;
+    height: 90%;
+    height: 75%;
   }
 
   .card-img-top {
@@ -95,7 +125,7 @@ body {
 
 @media (max-width: 480px) {
   .card {
-    height: 90%;
+    height: 70%;
     width: 100%;
   }
 
@@ -105,5 +135,11 @@ body {
 
   .card-title {
     font-size: 9pt;
+  }
+
+  .fin {
+    background-color: rgba(143, 132, 126);
+    width: 90%;
+    height: 70%;
   }
 }
