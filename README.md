@@ -1,44 +1,31 @@
-# Página Web de Vivero para Vivero Don Pedro
+# Vivero Web App
 
-### ¡Bienvenido a la página web de Vivero Don Pedro!
+## Descripción
 
+Esta es una aplicación web para un vivero, desarrollada utilizando únicamente HTML, CSS y JavaScript. La aplicación permite a los usuarios explorar una colección de plantas, obtener información detallada sobre cada una de ellas y ponerse en contacto con el vivero para realizar consultas o pedidos.
 
-Esta página web es un proyecto dedicado a mostrar la belleza de las plantas y brindar a nuestros clientes una experiencia en línea para explorar y adquirir una amplia variedad de plantas
+## Características
 
-### Home
-
-En el mismo podremos encontrar tanto la presentacion del vivero como tambien el catalogo tipos y calses de plantas que se puede encontrar en el vivero
-
-![Portada](https://github.com/AgustinRibotta/AppWebVivero/blob/main/media/protadaVivero.png)
-![Portada](https://github.com/AgustinRibotta/AppWebVivero/blob/main/media/Inferior.png)
-
-### Detail
-
-En esta vista podremos encontrar la categoria de plantas con su descripcion y caracteristicas de es categoria de plantas y ademas la disponibilidad de plantas que se pueden encontrar.
-
-![Detail](https://github.com/AgustinRibotta/AppWebVivero/blob/main/media/Detail.png)
-
+- **Catálogo de plantas:** Muestra una lista de plantas disponibles en el vivero con imágenes, nombres y descripciones breves.
+- **Detalles de la planta:** Al hacer clic en una planta del catálogo, el usuario puede ver más detalles, como las características, cuidados, y precios.
+- **Formulario de contacto:** Un formulario que permite a los usuarios enviar consultas o pedidos directamente al vivero.
+- **Responsivo:** Diseño adaptable a diferentes tamaños de pantalla, asegurando una experiencia de usuario óptima en dispositivos móviles y de escritorio.
 
 ## Tecnologías Utilizadas
 
-![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,bootstrap)](https://skillicons.dev)
 
-## Instalación y Uso
+## Uso
 
-Codigo Fuente https://github.com/AgustinRibotta/AppWebVivero.git
+1. **Explora el catálogo:** En la página principal, puedes navegar a través del catálogo de plantas.
+2. **Ver detalles:** Haz clic en cualquier planta para ver más detalles sobre la misma.
+3. **Contactar:** Visita la página de contacto y completa el formulario para enviar una consulta o pedido.
 
-1- Descargar Proyecto
+## Personalización
 
-2- Crea el Entorno Virtual
+Si deseas personalizar la aplicación:
 
-3- Installar local.txt (requirements)
-
-4- Modificar archivos manager.py y wsgi.py
-
-5- Realizar Migrciones
-
-6- Iniciar Proyecto
-    
-
-Gracias por visitar Vivero Don Pedro en línea y por tu interés en nuestras plantas y servicios. ¡Esperamos que disfrutes explorando nuestro vivero virtual y que encuentres la inspiración para crear tu propio paraíso de jardín!
+- **Modificar contenido:** Edita los archivos HTML para cambiar los textos, imágenes y enlaces.
+- **Actualizar estilos:** Edita los archivos CSS en la carpeta `styles` para ajustar el diseño según tus preferencias.
+- **Agregar funcionalidades:** Si deseas agregar nuevas características, puedes editar o agregar archivos JavaScript en la carpeta `scripts`.
 
