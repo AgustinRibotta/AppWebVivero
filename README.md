@@ -1,31 +1,55 @@
-# Vivero Web App
+# Vivero Don Pedro - Página Web
 
-## Descripción
+Este repositorio contiene el código fuente de la página web del **Vivero Don Pedro**. La página está diseñada para ser informativa, fácil de usar, y está optimizada para dispositivos móviles. Incluye secciones como una página de inicio y una sección de contacto.
 
-Esta es una aplicación web para un vivero, desarrollada utilizando únicamente HTML, CSS y JavaScript. La aplicación permite a los usuarios explorar una colección de plantas, obtener información detallada sobre cada una de ellas y ponerse en contacto con el vivero para realizar consultas o pedidos.
+## Estructura del Proyecto
 
-## Características
+El proyecto está compuesto por los siguientes archivos:
 
-- **Catálogo de plantas:** Muestra una lista de plantas disponibles en el vivero con imágenes, nombres y descripciones breves.
-- **Detalles de la planta:** Al hacer clic en una planta del catálogo, el usuario puede ver más detalles, como las características, cuidados, y precios.
-- **Formulario de contacto:** Un formulario que permite a los usuarios enviar consultas o pedidos directamente al vivero.
-- **Responsivo:** Diseño adaptable a diferentes tamaños de pantalla, asegurando una experiencia de usuario óptima en dispositivos móviles y de escritorio.
+- `index.html`: La página de inicio del sitio web.
+- `contacto.html`: Página de contacto con un formulario de contacto, información de la empresa y un mapa interactivo.
+- `detail_plant.html`: Página de detalles de las plantas.
+- `style.css`: Archivo de estilos personalizados para la página web.
+- `README.md`: Este archivo que explica el propósito del proyecto y cómo configurarlo.
+
+
+## Configuración y Uso
+
+### 1. Clonar el Repositorio
+
+Para comenzar, clona este repositorio en tu máquina local usando el siguiente comando:
+
+```bash
+git clone https://github.com/tu-usuario/vivero-don-pedro.git
+```
+
+### 2. Abrir los Archivos
+
+Abre los archivos `index.html` , `detail_plant.html` y `contacto.html` en tu editor de texto preferido. Puedes abrirlos directamente en un navegador web para visualizar la página.
+
+### 3. Personalización
+
+Si deseas personalizar la página, aquí hay algunos pasos básicos:
+
+- **Modificar el Contenido**: Puedes editar los archivos HTML para cambiar el texto, imágenes y enlaces a redes sociales.
+- **Actualizar Estilos**: Puedes modificar el archivo `style.css` para cambiar los colores, fuentes y estilos de la página.
+- **Agregar Funcionalidades**: Si deseas agregar funcionalidades adicionales, puedes incluir scripts JavaScript en los archivos HTML.
+
+### 4. Integración del Mapa
+
+La página de contacto incluye una sección para un mapa interactivo. Puedes integrar un mapa de Google Maps o cualquier otra API de mapas siguiendo estos pasos:
+
+- Registra una cuenta en [Google Cloud](https://cloud.google.com/) y habilita la API de Google Maps.
+- Inserta el código de integración de Google Maps en el lugar indicado en `contacto.html`.
+
+## Créditos
+
+Desarrollado por:
+
+<img src="https://avatars.githubusercontent.com/u/122037519?s=400&u=fdfe429f73c41f3dce1862e30a378798101b971b&v=4" alt="Tu Imagen de Perfil" width="100" style="border-radius: 50%;"/>
+
+[Agusin Ribotta](https://github.com/tu-usuario)
 
 ## Tecnologías Utilizadas
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,bootstrap)](https://skillicons.dev)
-
-## Uso
-
-1. **Explora el catálogo:** En la página principal, puedes navegar a través del catálogo de plantas.
-2. **Ver detalles:** Haz clic en cualquier planta para ver más detalles sobre la misma.
-3. **Contactar:** Visita la página de contacto y completa el formulario para enviar una consulta o pedido.
-
-## Personalización
-
-Si deseas personalizar la aplicación:
-
-- **Modificar contenido:** Edita los archivos HTML para cambiar los textos, imágenes y enlaces.
-- **Actualizar estilos:** Edita los archivos CSS en la carpeta `styles` para ajustar el diseño según tus preferencias.
-- **Agregar funcionalidades:** Si deseas agregar nuevas características, puedes editar o agregar archivos JavaScript en la carpeta `scripts`.
-
+[![My Skills](https://skillicons.dev/icons?i=html,css,bootstrap,js)](https://skillicons.dev)  

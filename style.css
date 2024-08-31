@@ -143,3 +143,38 @@ footer {
     height: 70%;
   }
 }
+
+
+
+/* Mantén este CSS si aún no lo has añadido */
+.progress-bars-section {
+  padding: 50px 0;
+}
+
+/* Hacer que las barras de progreso sean más responsivas */
+.progress {
+  height: 30px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+/* Centrar el texto en las barras de progreso */
+.progress-bar span {
+  font-size: 14pt;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  white-space: nowrap; /* Evita que el texto se rompa */
+}
+
+
+@media (max-width: 768px) {
+  .progress-bars-section .row {
+      margin-bottom: 1rem;
+  }
+  .col {
+      margin-bottom: 15px;
+  }
+}
